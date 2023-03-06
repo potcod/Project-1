@@ -1,4 +1,4 @@
-# *Project-2*
+# *Project-1*
 ## _Group Name_
 ### turdTurtles
 ###
@@ -14,14 +14,14 @@
 ## _CPP Emails_
 ### 
 ### phupetern@cpp.edu
-### 
+### nilpatel@cpp.edu
 ###
 ###
 ###
 ## _Github Usernames_
 ### Justin: 
 ### Peter: 2SikNinja
-### Nil: 
+### Nil: nilrnp
 ###
 ###
 ###
