@@ -37,7 +37,7 @@ def division(num1, num2):
 
 # get what type of operation will be done on the numbers
 def getOperation():
-    return 
+    return
 
 # get what type of number is being used for calculations
 def getNumberType():
