@@ -134,11 +134,11 @@ def getHexNumber(string):
 # -Peter I just added this incase we go along this route to code our program. Can switch the return with another function like getOctal
 def detectNumber(userInput):
     if userInput.startswith("0x"):
-        return 16
+        return int(userInput, 16)
     elif userInput.startswith("0o"):
-        return 8
+        return int(userInput, 8)
     elif userInput.isnumeric():
-        return 10
+        return int(userInput)
     else:
         return None
 
