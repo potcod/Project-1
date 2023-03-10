@@ -1,4 +1,4 @@
-# main function (ask for user input here)
+# main function (ask for user input here)1
 def main():
     numberType = getNumberType()
     print("Enter first number")
@@ -130,6 +130,17 @@ def getOctalNumber(string):
 # converts the hexadecimal number to decimal
 def getHexNumber(string):
     return int(string, 16)
+
+# -Peter I just added this incase we go along this route to code our program. Can switch the return with another function like getOctal
+def detectNumber(userInput):
+    if userInput.startswith("0x"):
+        return 16
+    elif userInput.startswith("0o"):
+        return 8
+    elif userInput.isnumeric():
+        return 10
+    else:
+        return None
 
 
 if __name__ == '__main__':
