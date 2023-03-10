@@ -12,14 +12,14 @@
 ###
 ###
 ## _CPP Emails_
-### 
+### jkta@cpp.edu
 ### phupetern@cpp.edu
 ### nilpatel@cpp.edu
 ###
 ###
 ###
 ## _Github Usernames_
-### Justin: 
+### Justin: potcod
 ### Peter: 2SikNinja
 ### Nil: nilrnp
 ###
