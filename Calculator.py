@@ -17,29 +17,29 @@ def main():
         num2InDecimal = int(num2)
 
     operationType = getOperation()
-    result = performOperation(num1InDecimal, num2InDecimal, operationType)
+    performOperation(num1InDecimal, num2InDecimal, operationType)
 
     return
 
 
 # perform addition
 def addition(num1, num2):
-    return print("The two numbers added together =", num1 + num2)
+    print("The two numbers added together =", num1 + num2)
 
 
 # perform subtraction
 def subtraction(num1, num2):
-    return print("The two numbers subtracted = ", num1 - num2)
+    print("The two numbers subtracted = ", num1 - num2)
 
 
 # perform multiplication
 def multiplication(num1, num2):
-    return print("The two numbers multiplied together = ", num1 * num2)
+    print("The two numbers multiplied together = ", num1 * num2)
 
 
 # perform division
 def division(num1, num2):
-    return print("The two numbers divided = ", num1 / num2)
+    print("The two numbers divided = ", num1 / num2)
 
 
 # get what type of operation will be done on the numbers
