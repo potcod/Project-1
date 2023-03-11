@@ -96,8 +96,10 @@ def getInputs(numberType):
 # check if entered string is a valid decimal integer
 def checkIfDecimal(num_str):
     try:
-        int(num_str)
-        return True
+        if num_str.isnumeric():
+            return True
+        else:
+            raise ValueError()
     except ValueError:
         print("Please enter a valid decimal number")
         exit()
@@ -106,8 +108,10 @@ def checkIfDecimal(num_str):
 # check if entered string is a valid octal integer
 def checkIfOctal(num_str):
     try:
-        int(num_str, 8)
-        return True
+        if num_str.startswith("0o"):
+            return True
+        else:
+            raise ValueError()
     except ValueError:
         print("Please enter a valid octal number")
         exit()
@@ -116,8 +120,10 @@ def checkIfOctal(num_str):
 # check if entered string is a valid hexadecimal integer
 def checkIfHex(num_str):
     try:
-        int(num_str, 16)
-        return True
+        if num_str.startswith("0x"):
+            return True
+        else:
+            raise ValueError()
     except ValueError:
         print("Please enter a valid hexadecimal number")
         exit()
@@ -131,18 +137,6 @@ def getOctalNumber(string):
 # converts the hexadecimal number to decimal
 def getHexNumber(string):
     return int(string, 16)
-
-
-# -Peter I just added this incase we go along this route to code our program. Can switch the return with another function like getOctal
-def detectNumber(userInput):
-    if userInput.startswith("0x"):
-        return int(userInput, 16)
-    elif userInput.startswith("0o"):
-        return int(userInput, 8)
-    elif userInput.isnumeric():
-        return int(userInput)
-    else:
-        return None
 
 
 if __name__ == '__main__':
