@@ -1,24 +1,28 @@
 # main function (ask for user input here)1
 def main():
-    numberType = getNumberType()
-    print("Enter first number")
-    num1 = getInputs(numberType)
-    print("Enter second number")
-    num2 = getInputs(numberType)
+    while True:
+        numberType = getNumberType()
+        print("Enter first number")
+        num1 = getInputs(numberType)
+        print("Enter second number")
+        num2 = getInputs(numberType)
 
-    if (numberType == 2):
-        num1InDecimal = getOctalNumber(num1)
-        num2InDecimal = getOctalNumber(num2)
-    elif (numberType == 3):
-        num1InDecimal = getHexNumber(num1)
-        num2InDecimal = getHexNumber(num2)
-    else:
-        num1InDecimal = int(num1)
-        num2InDecimal = int(num2)
+        if (numberType == 2):
+            num1InDecimal = getOctalNumber(num1)
+            num2InDecimal = getOctalNumber(num2)
+        elif (numberType == 3):
+            num1InDecimal = getHexNumber(num1)
+            num2InDecimal = getHexNumber(num2)
+        else:
+            num1InDecimal = int(num1)
+            num2InDecimal = int(num2)
 
-    operationType = getOperation()
-    performOperation(num1InDecimal, num2InDecimal, operationType)
-
+        operationType = getOperation()
+        performOperation(num1InDecimal, num2InDecimal, operationType)
+        
+        restart = input("Restart? (Y/N) ")
+        if restart.upper() != "Y":
+            break
     return
 
 
@@ -60,7 +64,7 @@ def performOperation(num1, num2, operationNumber):
     if (operationNumber == 1):
         addition(num1, num2)
     elif (operationNumber == 2):
-        subtraction((num1, num2))
+        subtraction(num1, num2)
     elif (operationNumber == 3):
         multiplication(num1, num2)
     else:
